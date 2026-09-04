@@ -13,9 +13,9 @@ article{
     width: clamp(500px, 1vw);
 }
 main{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr minmax(auto, 20%);
     gap: 1rem;
 }
 
