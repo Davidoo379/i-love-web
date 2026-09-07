@@ -10,16 +10,12 @@ article{
     border-radius: 1rem;
     border: 10px solid whitesmoke;
     box-shadow: 0px 10px 20px rgb(54, 198, 255);
-    max-width: 400px;
+    width: clamp(500px, 1vw);
 }
 main{
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap-reverse;
+    display: grid;
     align-items: center;
-    justify-content: center;
-    align-items: self-start;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr minmax(auto, 20%);
     gap: 1rem;
 }
 
