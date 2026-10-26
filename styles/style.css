@@ -56,3 +56,13 @@ h2 {
 h3 {
     color: rgb(75, 75, 190);
 }
+
+.good-colors {
+    background-color: rgb(64, 38, 87);
+    color: rgb(174, 248, 232);
+}
+
+.bad-colors {
+    background-color: rgb(62, 50, 73);
+    color: rgb(53, 78, 72);
+}
