@@ -2,28 +2,27 @@ html {
     background: linear-gradient(rgba(166, 255, 228, 0.267), rgb(0, 109, 211));
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: max-content 100%;
+}
+
+body {
+    /* height: 100%; */
 }
 
 
 main {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    width: 100%;
-    height: auto;
-    flex-direction: column-reverse;
-    align-items: center;
-    /* white-space: nowrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    justify-content: center;
     overflow-y: clip;
     overflow-x: auto;
-    gap: 20px padding 8px;
-    background-color: rgba(53, 74, 168, 0.397);
-    scrollbar-width: thin;
-    scrollbar-color: rgb(32, 50, 204) transparent;
+    gap: 20px;
+    padding: 1rem;
 
     @media (min-width: 30em) {
         flex-direction: row-reverse;
         align-items: unset;
+        transform:
+            rotateX(0turn) translateZ(4em);
     }
 }
 
@@ -33,11 +32,30 @@ article {
     border-radius: 1rem;
     border: 10px solid whitesmoke;
     box-shadow: 0px 10px 20px rgb(54, 198, 255);
-    flex: 0 0 auto;
-    width: min(500px, 60vw);
-    margin: 20px;
-    margin-right: 0%;
-    scroll-snap-align: start;
+    aspect-ratio: 1/1;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    place-self: center;
+    width: 80%;
+
+    transition: 0.2s;
+
+    &:hover,
+    &:focus-visible {
+        scale: 1.1;
+    }
+
+    &.midterm {
+        background: rgb(230, 206, 173);
+        box-shadow: 0px 10px 20px rgb(255, 215, 54);
+        grid-column: 1/-1;
+        width: auto;
+
+        h2 {
+            margin-top: 0;
+            color: rgb(123, 80, 0);
+        }
+    }
 }
 
 
@@ -50,11 +68,17 @@ h1 {
 }
 
 h2 {
+    margin-top: 0;
     color: blue;
 }
 
 h3 {
+    margin-bottom: 0;
     color: rgb(75, 75, 190);
+}
+
+p {
+    margin-top: 0;
 }
 
 .good-colors {
