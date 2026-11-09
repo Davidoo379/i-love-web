@@ -1,0 +1,25 @@
+{
+  "name": "i-love-web",
+  "version": "1.0.0",
+  "description": "Learning Journal en Digital Gardening",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidoo379/i-love-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Davidoo379/i-love-web/issues"
+  },
+  "homepage": "https://github.com/Davidoo379/i-love-web#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.8"
+  }
+}

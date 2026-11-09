@@ -1,0 +1,20 @@
+---
+title: David's Digital Garden
+layout: "base.njk"
+
+---
+
+<h2>Favorite Days</h2>
+<ul>
+  {%- for day in collections.favorite | reverse -%}
+    <li>
+      <a href="{{ day.url }}">
+        <article>
+          <h2>{{ day.data.title }}</h2>
+          <p>{{ day.data.date | dayDate }}</p>
+          <p>{{ day.data.summary }}</p>
+        </article>
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>
