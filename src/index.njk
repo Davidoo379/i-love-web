@@ -8,7 +8,7 @@ layout: "base.njk"
 <ul>
   {%- for day in collections.favorite | reverse -%}
     <li>
-      <a href="{{ day.url }}">
+      <a href="{{ day.url | url}}">
         <article>
           <h2>{{ day.data.title }}</h2>
           <p>{{ day.data.date | dayDate }}</p>
