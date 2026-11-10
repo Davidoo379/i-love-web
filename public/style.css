@@ -1,10 +1,3 @@
-html {
-    background: linear-gradient(rgba(166, 255, 228, 0.267), rgb(0, 109, 211));
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,64 +7,11 @@ html {
     scrollbar-width: none;
 }
 
-
-main {
-    >ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
-        justify-content: center;
-        overflow-y: clip;
-        overflow-x: auto;
-        gap: 20px;
-        padding: 1rem;
-
-        @media (min-width: 30em) {
-            flex-direction: row-reverse;
-            align-items: unset;
-            transform:
-                rotateX(0turn) translateZ(4em);
-        }
-
-        a:visited {
-            article {
-                background-color: white;
-                border: 10px solid lightblue;
-                box-shadow: 0px 0px 0px transparent;
-            }
-        }
-
-        article {
-            padding: 1rem;
-            background: lightblue;
-            border-radius: 1rem;
-            border: 10px solid whitesmoke;
-            box-shadow: 0px 10px 20px rgb(54, 198, 255);
-            aspect-ratio: 1/1;
-            overflow-y: scroll;
-            scrollbar-width: none;
-            place-self: center;
-            width: 80%;
-
-            transition: 0.2s;
-
-            &:hover,
-            &:focus-visible {
-                scale: 1.1;
-            }
-
-            &.midterm {
-                background: rgb(230, 206, 173);
-                box-shadow: 0px 10px 20px rgb(255, 215, 54);
-                grid-column: 1/-1;
-                width: auto;
-
-                h2 {
-                    margin-top: 0;
-                    color: rgb(123, 80, 0);
-                }
-            }
-        }
-    }
+html {
+    background: linear-gradient(rgba(166, 255, 228, 0.267), rgb(0, 109, 211));
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
 }
 
 
@@ -85,14 +25,31 @@ h1 {
     padding: 1rem;
 }
 
+main>h2 {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
 h2 {
-    margin-top: 0;
+    font-size: 1.5rem;
     color: blue;
 }
 
+.date {
+    color: gray;
+    font-size: 1rem;
+}
+
 h3 {
-    margin-bottom: 0;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     color: rgb(75, 75, 190);
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: rgb(50, 50, 123);
 }
 
 p {
@@ -147,10 +104,87 @@ img {
     display: block;
 }
 
-nav {
-    ul {
-        display: flex;
-        padding: 1rem;
+header {
+    nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            gap: 1rem;
+
+            li {
+                background-color: white;
+                padding: 1rem;
+                border-radius: 9999px;
+
+                transition: 0.1s;
+
+                &:hover {
+                    box-shadow: 0px 0px 10px rgb(27, 160, 138);
+                }
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding: 2rem;
+
+    >ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+        justify-content: center;
         gap: 1rem;
+
+        @media (min-width: 30em) {
+            flex-direction: row-reverse;
+            align-items: unset;
+            transform:
+                rotateX(0turn) translateZ(4em);
+        }
+
+        a:visited {
+            article {
+                background-color: white;
+                border: 10px solid lightblue;
+                box-shadow: 0px 0px 0px transparent;
+            }
+        }
+
+        article {
+            padding: 1rem;
+            background: lightblue;
+            border-radius: 1rem;
+            border: 10px solid whitesmoke;
+            box-shadow: 0px 10px 20px rgb(54, 198, 255);
+            aspect-ratio: 1/1;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            place-self: center;
+            width: 80%;
+
+            transition: 0.2s;
+
+            &:hover,
+            &:focus-visible {
+                scale: 1.1;
+            }
+
+            &.midterm {
+                background: rgb(230, 206, 173);
+                box-shadow: 0px 10px 20px rgb(255, 215, 54);
+                grid-column: 1/-1;
+                width: auto;
+
+                h2 {
+                    margin-top: 0;
+                    color: rgb(123, 80, 0);
+                }
+            }
+        }
     }
 }

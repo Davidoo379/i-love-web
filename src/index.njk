@@ -11,7 +11,7 @@ layout: "base.njk"
       <a href="{{ day.url | url}}">
         <article>
           <h2>{{ day.data.title }}</h2>
-          <p>{{ day.data.date | dayDate }}</p>
+          <p class="date">{{ day.data.date | dayDate }}</p>
           <p>{{ day.data.summary }}</p>
         </article>
       </a>

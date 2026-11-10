@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Comic Relief";
+    src: url(assets/fonts/Comic_Relief/ComicRelief-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "TASA Orbiter";
+    src: url(assets/fonts/TASA_Orbiter/static/TASAOrbiter-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Manasalve";
+    src: url(assets/fonts/Mansalva/Mansalva-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    font-family: 'Manasalve', 'Tasa Orbiter', 'Comic Relief', sans-serif;
+}
