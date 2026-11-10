@@ -1,3 +1,4 @@
+
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
@@ -10,6 +11,8 @@ module.exports = function (eleventyConfig) {
     });
 
     return {
+        pathPrefix: "/i-love-web/",
+
         dir: {
             input: "src",
             output: "public"
