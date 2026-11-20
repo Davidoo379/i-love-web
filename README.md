@@ -1,5 +1,8 @@
 # i-love-web
 
+my inspiration board:
+https://www.tldraw.com/f/CMUfd5JaAAYvGY_MdAWO2?d=v-433.-1760.2522.4760.page
+
 Learning Journal en Digital Gardening
 
 <!-- De instructie voor deze leertaak vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/i-love-web/blob/main/docs/INSTRUCTIONS.md) -->
