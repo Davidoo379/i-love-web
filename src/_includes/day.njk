@@ -2,7 +2,8 @@
 layout: "base.njk"
 
 ---
-
-<h2>{{ title }}</h2>
-<p>{{ date | dayDate }}</p>
-{{ content | safe }}
+<main class="day-detail" style="view-transition-name: {{ title | kabab }};">
+  <h2>{{ title }}</h2>
+  <p>{{ date | dayDate }}</p>
+  {{ content | safe }}
+</main>

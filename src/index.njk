@@ -3,18 +3,19 @@ title: David's Digital Garden
 layout: "base.njk"
 
 ---
-
-<h2>Favorite Days</h2>
-<ul>
-  {%- for day in collections.favorite | reverse -%}
-    <li>
-      <a href="{{ day.url | url}}">
-        <article>
-          <h2>{{ day.data.title }}</h2>
-          <p class="date">{{ day.data.date | dayDate }}</p>
-          <p>{{ day.data.summary }}</p>
-        </article>
-      </a>
-    </li>
-  {%- endfor -%}
-</ul>
+<main>
+  <h2>Favorite Days</h2>
+  <ul>
+    {%- for day in collections.favorite | reverse -%}
+      <li>
+        <a href="{{ day.url | url}}">
+          <article style="view-transition-name: {{ day.data.title | kabab }};">
+            <h2>{{ day.data.title }}</h2>
+            <p class="date">{{ day.data.date | dayDate }}</p>
+            <p class="summary">{{ day.data.summary }}</p>
+          </article>
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</main>

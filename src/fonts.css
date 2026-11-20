@@ -1,25 +1,26 @@
 @font-face {
-    font-family: "Comic Relief";
-    src: url(assets/fonts/Comic_Relief/ComicRelief-Regular.ttf);
+    font-family: "MadimiOne";
+    src: url(assets/fonts/madimione/MadimiOne-Regular.ttf);
     font-weight: 400;
     font-style: normal;
     font-display: fallback;
 }
 
 @font-face {
-    font-family: "TASA Orbiter";
-    src: url(assets/fonts/TASA_Orbiter/static/TASAOrbiter-Regular.ttf);
+    font-family: "Iconsolata";
+    src: url(assets/fonts/inconsolata/Inconsolata.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Manasalve";
-    src: url(assets/fonts/Mansalva/Mansalva-Regular.ttf);
-    font-weight: 400;
-    font-style: normal;
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: 'MadimiOne', sans-serif;
 }
 
-:root {
-    font-family: 'Manasalve', 'Tasa Orbiter', 'Comic Relief', sans-serif;
+p {
+    font-family: 'Iconsolata', sans-serif;
 }
