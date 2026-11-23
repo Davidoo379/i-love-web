@@ -128,6 +128,7 @@ main {
             position: relative;
             margin-top: 3em;
             background-color: var(--BG-COLOR-DARK);
+            overflow-x: clip;
 
             h2 {
                 border-radius: 1em 1em 0em 0em;
@@ -135,7 +136,7 @@ main {
                 position: absolute;
                 bottom: 100%;
                 left: 0;
-                width: 40%;
+                width: 5em;
                 text-align: center;
             }
 
@@ -149,15 +150,14 @@ main {
                 }
 
                 &.summary {
-                    margin-top: auto;
+                    display: block;
                     place-content: end start;
-                    height: 100%;
-                    text-align: left;
                     text-transform: uppercase;
+                    height: 100%;
                     font-weight: 700;
                     font-size: 2em;
-                    overflow: hidden;
                     text-overflow: ellipsis;
+                    line-clamp: 3;
                 }
             }
         }
@@ -171,6 +171,11 @@ main {
 }
 
 .day-detail {
+
+    &::view-transition {
+        animation-duration: 0.8s;
+    }
+
     background-color: var(--BG-COLOR-DARK);
     margin-top: 3em;
     position: relative;
@@ -182,7 +187,7 @@ main {
         position: absolute;
         bottom: 100%;
         left: 0;
-        width: 40%;
+        width: 5em;
         text-align: center;
     }
 
